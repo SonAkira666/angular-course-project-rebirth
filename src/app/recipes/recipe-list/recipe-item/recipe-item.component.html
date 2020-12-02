@@ -1,4 +1,6 @@
-<a class="list-group-item clearfix" (click)="onClick()" style="cursor: pointer" routerLink="active"<!-- -->>
+<!-- <a class="list-group-item clearfix" (click)="onClick()" style="cursor: pointer" routerLink="active"> -->
+<!-- Ma com'è che funziona la classe attiva per questo elemento? Se metto routerLinkActive="active" non funziona perché non c'è la direttiva e navigo da codice... ma così funziona -->
+<a class="list-group-item clearfix" style="cursor: pointer" [routerLink]="this.id" routerLinkActive="active">
   <div class="pull-left">
     <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
     <p class="list-group-item-text">{{ recipe.description }}</p>
