@@ -1,4 +1,4 @@
-import { EventEmitter, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 
 import { Ingredient } from '../shared/ingredient.model';
 import { Recipe } from './recipe.model';
@@ -15,7 +15,6 @@ export class RecipesService {
       'https://www.handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg',
       [new Ingredient('torta', 1), new Ingredient('tipo torta', 2), new Ingredient('sempre torta', 17)])
   ];
-  selectedRecipe = new EventEmitter<Recipe>();
 
   getRecipes(): Recipe[] { return this.recipes.slice(); }
 }
